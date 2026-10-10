@@ -18,3 +18,5 @@ body{background-color:var(--bg);background-image:radial-gradient(ellipse at 92% 
 
 /* Four overview indicators; preserve the existing single-column mobile layout. */
 @media(min-width:701px){.metrics{grid-template-columns:repeat(4,1fr)}.metrics article{padding-left:24px;padding-right:24px}.metrics article:last-child strong{font-size:64px;letter-spacing:-3px}}
+
+.metrics .details-link{display:block;width:max-content;margin-top:12px;color:var(--fg);font-size:11px;border-bottom:1px solid var(--line);padding-bottom:4px}.metrics .details-link:hover{color:var(--orange)}@media(max-width:700px){.metrics .details-link{grid-column:1;grid-row:3}}
