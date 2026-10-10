@@ -1,0 +1,279 @@
+{
+  "updated": "2026-10-10",
+  "coverage": "March 2024 – June 2026",
+  "cohorts": [
+    {
+      "cohort": 1,
+      "graduates": 8,
+      "month": "2024-03",
+      "area": "Livingstone"
+    },
+    {
+      "cohort": 2,
+      "graduates": 13,
+      "month": "2024-06",
+      "area": "Livingstone"
+    },
+    {
+      "cohort": 3,
+      "graduates": 22,
+      "month": "2024-09",
+      "area": "Livingstone"
+    },
+    {
+      "cohort": 4,
+      "graduates": 15,
+      "month": "2025-03",
+      "area": "Livingstone"
+    },
+    {
+      "cohort": 5,
+      "graduates": 18,
+      "month": "2025-04",
+      "area": "Livingstone"
+    },
+    {
+      "cohort": 6,
+      "graduates": 8,
+      "month": "2025-05",
+      "area": "Mukuni Village"
+    },
+    {
+      "cohort": 7,
+      "graduates": 22,
+      "month": "2025-06",
+      "area": "Livingstone"
+    },
+    {
+      "cohort": 8,
+      "graduates": 11,
+      "month": "2025-07",
+      "area": "Mukuni Village"
+    },
+    {
+      "cohort": 9,
+      "graduates": 22,
+      "month": "2025-07",
+      "area": "Livingstone"
+    },
+    {
+      "cohort": 10,
+      "graduates": 16,
+      "month": "2025-09",
+      "area": "Livingstone"
+    },
+    {
+      "cohort": 11,
+      "graduates": 13,
+      "month": "2025-09",
+      "area": "Mukuni Village"
+    },
+    {
+      "cohort": 12,
+      "graduates": 17,
+      "month": "2025-11",
+      "area": "Livingstone"
+    },
+    {
+      "cohort": 13,
+      "graduates": 27,
+      "month": "2025-11",
+      "area": "Mukuni Village"
+    },
+    {
+      "cohort": 14,
+      "graduates": 46,
+      "month": "2026-03",
+      "area": "Mukuni Village"
+    },
+    {
+      "cohort": 15,
+      "graduates": 14,
+      "month": "2026-03",
+      "area": "Livingstone"
+    },
+    {
+      "cohort": 16,
+      "graduates": 3,
+      "month": "2026-05",
+      "area": "Livingstone"
+    },
+    {
+      "cohort": 17,
+      "graduates": 5,
+      "month": "2026-06",
+      "area": "Mukuni Village"
+    }
+  ],
+  "meetups": [
+    {
+      "date": "2025-01-18",
+      "attendance": 34,
+      "theme": "Casual Meetup",
+      "venue": "Jollyboys Backpackers"
+    },
+    {
+      "date": "2025-02-22",
+      "attendance": 37,
+      "theme": "Pyramid & Ponzi Schemes",
+      "venue": "Jollyboys Backpackers"
+    },
+    {
+      "date": "2025-03-08",
+      "attendance": 52,
+      "theme": "Cohort #4 Graduation & Casual Meetup",
+      "venue": "Jollyboys Backpackers"
+    },
+    {
+      "date": "2025-04-05",
+      "attendance": 46,
+      "theme": "Merchant Bitcoin Adoption",
+      "venue": "Jollyboys Backpackers"
+    },
+    {
+      "date": "2025-04-26",
+      "attendance": 66,
+      "theme": "Cohort #5 Graduation & Casual Meetup",
+      "venue": "Sweet & Salty Cafe"
+    },
+    {
+      "date": "2025-05-10",
+      "attendance": 35,
+      "theme": "Cohort #6 Graduation & Casual Meetup",
+      "venue": "Royal Mukuni Resort"
+    },
+    {
+      "date": "2025-05-22",
+      "attendance": 104,
+      "theme": "Bitcoin Pizza Day",
+      "venue": "Sweet & Salty Cafe"
+    },
+    {
+      "date": "2025-06-07",
+      "attendance": 66,
+      "theme": "Cohort #7 Graduation & Casual Meetup",
+      "venue": "Sweet & Salty Cafe"
+    },
+    {
+      "date": "2025-07-05",
+      "attendance": 50,
+      "theme": "Cohort #8 Graduation & Casual Meetup",
+      "venue": "Royal Mukuni Resort"
+    },
+    {
+      "date": "2025-07-19",
+      "attendance": 67,
+      "theme": "Cohort #9 Graduation & Casual Meetup",
+      "venue": "Jollyboys Backpackers"
+    },
+    {
+      "date": "2025-08-24",
+      "attendance": 49,
+      "theme": "Casual Meetup",
+      "venue": "Sweet & Salty Cafe"
+    },
+    {
+      "date": "2025-09-13",
+      "attendance": 54,
+      "theme": "Cohort #10 Graduation & Casual Meetup",
+      "venue": "Jollyboys Backpackers"
+    },
+    {
+      "date": "2025-09-20",
+      "attendance": 57,
+      "theme": "Cohort #11 Graduation & Casual Meetup",
+      "venue": "Royal Mukuni Resort"
+    },
+    {
+      "date": "2025-11-08",
+      "attendance": 81,
+      "theme": "Cohort #13 Graduation & Casual Meetup",
+      "venue": "Royal Mukuni Resort"
+    },
+    {
+      "date": "2025-11-15",
+      "attendance": 40,
+      "theme": "Casual Meetup",
+      "venue": "Sweet & Salty Cafe"
+    },
+    {
+      "date": "2026-03-14",
+      "attendance": 83,
+      "theme": "Cohort #14 Graduation & Casual Meetup",
+      "venue": "Royal Mukuni Resort"
+    },
+    {
+      "date": "2026-03-17",
+      "attendance": 45,
+      "theme": "Cohort #15 Graduation & Casual Meetup",
+      "venue": "Jollyboys Backpackers"
+    },
+    {
+      "date": "2026-05-22",
+      "attendance": 90,
+      "theme": "Cohort #16 Graduation & Casual Meetup",
+      "venue": "Sweet & Salty Cafe"
+    },
+    {
+      "date": "2026-06-27",
+      "attendance": 45,
+      "theme": "Cohort #17 Graduation & Casual Meetup",
+      "venue": "Royal Mukuni Resort"
+    }
+  ],
+  "merchants": [
+    {
+      "name": "Fai's Kiosk",
+      "address": "Mokambo Road, Livingstone",
+      "id": 42215
+    },
+    {
+      "name": "Daily Need Groceries",
+      "address": "Mokambo Road, Livingstone",
+      "id": 42122
+    },
+    {
+      "name": "First Sping Enterprise",
+      "address": "John Hunt Way, Livingstone",
+      "id": 41993
+    },
+    {
+      "name": "Fork Cafe",
+      "address": "Nakatindi Road, Livingstone",
+      "id": 41933
+    },
+    {
+      "name": "MK Boutique",
+      "address": "Mosi-oa-Tunya Road, Livingstone",
+      "id": 41091
+    },
+    {
+      "name": "Livingstone Crocodile Park",
+      "address": "Address not shown in source listing",
+      "id": 36782
+    }
+  ],
+  "snapshot": {
+    "merchantCount": 124,
+    "recentlyVerified": 17,
+    "fundingSats": 4244729,
+    "contributors": 44
+  },
+  "sources": {
+    "cohorts": "Community-supplied Main Cohorts screenshot",
+    "meetups": "Community-supplied Meetups Events screenshot",
+    "merchants": "https://btcmap.org/community/bitcoin-victoria-falls/merchants",
+    "merchantStats": "https://btcmap.org/community/bitcoin-victoria-falls/stats",
+    "funding": "https://geyser.fund/project/bitcoinvictoriafalls",
+    "x": "https://x.com/BitcoinVicFalls",
+    "nostr": "https://primal.net/p/nprofile1qqsrrvzpv54ru6qvffu8deap9fahwu3g9wsnv9x9ylwfekr8g36vk5cx2vng9"
+  },
+  "notes": [
+    "17 cohort rows total 280 graduates. The screenshot footer says 275. Community owner confirmed 280 on 10 October 2026.",
+    "Attendance is event visits, not unique people; 2025 totals 838 and 2026 totals 263.",
+    "Education and meetup records end June 2026; do not interpret missing months as zero activity.",
+    "BTC Map and Geyser figures are snapshots checked 10 October 2026, not live API feeds.",
+    "Six merchant listings are the latest-added sample displayed by BTC Map, not the full directory. Merchant names preserve source spelling.",
+    "Team names and roles supplied by the community owner."
+  ]
+}
