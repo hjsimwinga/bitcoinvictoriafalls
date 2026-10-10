@@ -35,3 +35,14 @@ nav{gap:8px}nav a{display:flex;align-items:center;justify-content:center;min-hei
 .footer-top{font-size:13px}.footer-top small{font-size:11px}.footer-top div{gap:18px;flex-wrap:wrap}.footer-top a{min-height:44px;display:flex;align-items:center;font-size:12px}
 }
 @media(max-width:350px){nav a{padding-left:5px;padding-right:5px;font-size:11px}.data-summary{gap:16px}.data-summary strong{font-size:42px}.calendar-heading h2{font-size:19px}.calendar-heading button{margin-left:3px}}
+
+/* Desktop alignment and readability; retain the existing page structure. */
+@media(min-width:701px){
+.data-summary>div:first-child{font-variant-numeric:tabular-nums}
+.bar{font-size:12px}.bar b{font-weight:500;font-variant-numeric:tabular-nums}.bar span{font-size:11px}
+.filters label{font-size:11px}.filters input,.filters select,.filters button{min-height:44px;font-size:13px}.filters .search{min-width:0}
+table{font-size:13px;table-layout:fixed}th{font-size:11px}th:first-child,td:first-child{padding-left:0}th:last-child,td:last-child{padding-right:0;text-align:right;font-variant-numeric:tabular-nums}td{line-height:1.6;vertical-align:top}
+body:has(#education[aria-pressed="true"]) th:nth-child(1){width:12%}body:has(#education[aria-pressed="true"]) th:nth-child(2){width:20%}body:has(#education[aria-pressed="true"]) th:nth-child(3){width:26%}body:has(#education[aria-pressed="true"]) th:nth-child(4){width:26%}body:has(#education[aria-pressed="true"]) th:nth-child(5){width:16%}
+body:has(#meetups[aria-pressed="true"]) th:nth-child(1){width:17%}body:has(#meetups[aria-pressed="true"]) th:nth-child(2){width:43%}body:has(#meetups[aria-pressed="true"]) th:nth-child(3){width:27%}body:has(#meetups[aria-pressed="true"]) th:nth-child(4){width:13%}
+.calendar-layout{align-items:start}.calendar-heading{min-height:44px}.calendar-heading button{width:44px;height:44px}.calendar button,.calendar>span{font-variant-numeric:tabular-nums}.weekdays{font-size:11px}
+}
