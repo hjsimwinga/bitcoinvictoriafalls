@@ -12,3 +12,6 @@ body[data-page="0"] .header{height:92px}
 
 .brand img{width:48px;height:48px;object-fit:contain}
 @media(max-width:700px){.brand img{width:42px;height:42px}}
+
+/* Subtle brand colour in the background, beneath the data. */
+body{background-color:var(--bg);background-image:radial-gradient(ellipse at 92% 0%,rgba(250,152,20,.10),transparent 48%),radial-gradient(ellipse at 4% 65%,rgba(4,180,231,.075),transparent 52%);background-attachment:fixed;background-repeat:no-repeat}
