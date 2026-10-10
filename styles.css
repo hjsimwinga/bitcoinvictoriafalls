@@ -10,8 +10,8 @@ body[data-page="0"] .header{height:92px}
 .hero .text-link{padding:8px 0;font-size:12px}
 @media(max-width:700px){body[data-page="0"] .header{height:84px}.hero{padding:22px 0 26px}.hero h1{font-size:30px;letter-spacing:-1px}.hero-bottom{margin-top:16px;gap:14px}.hero .eyebrow{margin-bottom:14px}}
 
-.brand img{width:48px;height:48px;object-fit:contain}
-@media(max-width:700px){.brand img{width:42px;height:42px}}
+.brand img{width:80px;height:80px;object-fit:contain}
+@media(max-width:700px){.brand img{width:64px;height:64px}}
 
 /* Subtle brand colour in the background, beneath the data. */
 body{background-color:var(--bg);background-image:radial-gradient(ellipse at 92% 0%,rgba(250,152,20,.10),transparent 48%),radial-gradient(ellipse at 4% 65%,rgba(4,180,231,.075),transparent 52%);background-attachment:fixed;background-repeat:no-repeat}
