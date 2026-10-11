@@ -16,13 +16,13 @@ body[data-page="0"] .header{height:92px}
 /* Subtle brand colour in the background, beneath the data. */
 body{background-color:var(--bg);background-image:radial-gradient(ellipse at 92% 0%,rgba(250,152,20,.10),transparent 48%),radial-gradient(ellipse at 4% 65%,rgba(4,180,231,.075),transparent 52%);background-attachment:fixed;background-repeat:no-repeat}
 
-/* Four overview indicators; preserve the existing single-column mobile layout. */
-@media(min-width:701px){.metrics{grid-template-columns:repeat(4,1fr)}.metrics article{padding-left:24px;padding-right:24px}.metrics article:last-child strong{font-size:64px;letter-spacing:-3px}}
+/* Three overview indicators; preserve the existing single-column mobile layout. */
+@media(min-width:701px){.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}.metrics article{padding-left:24px;padding-right:24px}}
 
 .metrics .details-link{display:block;width:max-content;margin-top:12px;color:var(--fg);font-size:11px;border-bottom:1px solid var(--line);padding-bottom:4px}.metrics .details-link:hover{color:var(--orange)}@media(max-width:700px){.metrics .details-link{grid-column:1;grid-row:3}}
 
 /* Responsive refinement: readable records and generous touch controls. */
-@media(min-width:701px) and (max-width:1000px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 0}.metrics article:nth-child(3){border-left:0;padding-left:0}.metrics article:nth-child(2){padding-right:0}}
+@media(min-width:701px) and (max-width:1000px){.metrics{grid-template-columns:repeat(3,minmax(0,1fr));gap:0}.metrics article{padding-left:16px;padding-right:16px}.metrics strong{font-size:60px}}
 @media(max-width:700px){
 .shell{padding-left:20px;padding-right:20px}
 nav{gap:8px}nav a{display:flex;align-items:center;justify-content:center;min-height:44px;padding:10px 8px;font-size:12px}
@@ -43,6 +43,8 @@ nav{gap:8px}nav a{display:flex;align-items:center;justify-content:center;min-hei
 .filters label{font-size:11px}.filters input,.filters select,.filters button{min-height:44px;font-size:13px}.filters .search{min-width:0}
 table{font-size:13px;table-layout:fixed}th{font-size:11px}th:first-child,td:first-child{padding-left:0}th:last-child,td:last-child{padding-right:0;text-align:right;font-variant-numeric:tabular-nums}td{line-height:1.6;vertical-align:top}
 body:has(#education[aria-pressed="true"]) th:nth-child(1){width:12%}body:has(#education[aria-pressed="true"]) th:nth-child(2){width:20%}body:has(#education[aria-pressed="true"]) th:nth-child(3){width:26%}body:has(#education[aria-pressed="true"]) th:nth-child(4){width:26%}body:has(#education[aria-pressed="true"]) th:nth-child(5){width:16%}
-body:has(#meetups[aria-pressed="true"]) th:nth-child(1){width:17%}body:has(#meetups[aria-pressed="true"]) th:nth-child(2){width:43%}body:has(#meetups[aria-pressed="true"]) th:nth-child(3){width:27%}body:has(#meetups[aria-pressed="true"]) th:nth-child(4){width:13%}
+body:is([data-dataset="meetups"],:has(#meetups[aria-pressed="true"])) th:nth-child(1){width:17%}body:is([data-dataset="meetups"],:has(#meetups[aria-pressed="true"])) th:nth-child(2){width:43%}body:is([data-dataset="meetups"],:has(#meetups[aria-pressed="true"])) th:nth-child(3){width:27%}body:is([data-dataset="meetups"],:has(#meetups[aria-pressed="true"])) th:nth-child(4){width:13%}
 .calendar-layout{align-items:start}.calendar-heading{min-height:44px}.calendar-heading button{width:44px;height:44px}.calendar button,.calendar>span{font-variant-numeric:tabular-nums}.weekdays{font-size:11px}
 }
+
+.records-title{font-size:28px;letter-spacing:-1px;padding:18px 0;margin:0;font-weight:500}

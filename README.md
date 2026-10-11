@@ -2,7 +2,7 @@
 
 Minimal community data website hosted on GitHub Pages.
 
-- `index.html`: overview; `data.html`: filterable education and meetup records; `events.html`: upcoming lesson calendar.
+- `index.html`: overview; `data.html`: education records; `meetups.html`: dedicated meetup records; `events.html`: upcoming lesson calendar.
 - Update `data.json` for historical records. Overview figures and upcoming event HTML/ICS must also be updated when new data arrives.
 - 311 graduates across 18 cohorts. Cohort 18: 31 graduates, September 2026, Solid Rock, Livingstone.
 - Cohort 19 starts 16 October 2026; cohort 20 starts 17 October 2026. Times and venues are unconfirmed; calendar downloads reserve dates only.
@@ -10,3 +10,4 @@ Minimal community data website hosted on GitHub Pages.
 - Meetup attendance counts visits, not unique people.
 
 No build step. Serve the repository using any static HTTP server. GitHub Pages publishes main, root.
+
