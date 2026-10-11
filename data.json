@@ -305,5 +305,18 @@
       "venue": null,
       "time": null
     }
-  ]
+  ],
+  "team": {
+    "coFounders": [
+      "Adam Cowperthwait",
+      "Humphrey Simwinga"
+    ],
+    "merchantManager": "Michael Pelete",
+    "volunteers": [
+      "Lukas Mwanza",
+      "Caristo Sidowe",
+      "Chembo Kaloba",
+      "Nchimunya Simatende"
+    ]
+  }
 }
