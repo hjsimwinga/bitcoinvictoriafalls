@@ -49,4 +49,4 @@ body:is([data-dataset="meetups"],:has(#meetups[aria-pressed="true"])) th:nth-chi
 
 .records-title{font-size:28px;letter-spacing:-1px;padding:18px 0;margin:0;font-weight:500}
 
-.overview-meetups{padding-top:30px;border-bottom:1px solid var(--line)}.overview-meetups .section-heading{margin-bottom:0}.overview-meetups h2{font-size:28px;letter-spacing:-1px;font-weight:500;margin:0}.overview-meetups .data-summary{padding:28px 0 36px}@media(max-width:700px){.overview-meetups{padding-top:24px}.overview-meetups h2{font-size:24px}.overview-meetups .section-heading a{font-size:11px}}
+:is(.overview-meetups,.overview-education){padding-top:30px;border-bottom:1px solid var(--line)}:is(.overview-meetups,.overview-education) .section-heading{margin-bottom:0}:is(.overview-meetups,.overview-education) h2{font-size:28px;letter-spacing:-1px;font-weight:500;margin:0}:is(.overview-meetups,.overview-education) .data-summary{padding:28px 0 36px}@media(max-width:700px){:is(.overview-meetups,.overview-education){padding-top:24px}:is(.overview-meetups,.overview-education) h2{font-size:24px}:is(.overview-meetups,.overview-education) .section-heading a{font-size:11px}}
