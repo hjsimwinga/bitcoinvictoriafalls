@@ -12,6 +12,8 @@
 * { box-sizing: border-box; }
 html { scrollbar-gutter: stable; }
 body {
+  min-height: 100vh;
+  min-height: 100svh;
   margin: 0;
   background: var(--bg);
   background-image: radial-gradient(ellipse at 100% 0%, #fa98140a, transparent 45%), radial-gradient(ellipse at 0% 50%, #04b4e706, transparent 55%);

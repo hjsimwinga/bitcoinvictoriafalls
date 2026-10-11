@@ -49,7 +49,7 @@ function selectDataset(id) {
 }
 if (document.body.dataset.page === '1') {
   window.addEventListener('hashchange', () => selectDataset(defaultDataset()));
-  fetch('data.json?v=20261011-refined-1',{cache:'no-store'}).then(response => {
+  fetch('data.json?v=20261011-refined-2',{cache:'no-store'}).then(response => {
     if (!response.ok) throw Error('Data unavailable');
     return response.json();
   }).then(result => { data = result; selectDataset(defaultDataset()); }).catch(() => {
