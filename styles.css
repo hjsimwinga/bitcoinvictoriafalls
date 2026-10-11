@@ -210,7 +210,8 @@ body:is([data-dataset=meetups], :has(#meetups[aria-pressed=true])) th:nth-child(
   .data-summary span { font-size: 11px; }
   .attendance-note { max-width: none; font-size: 10px; line-height: 1.7; }
   .attendance-note span { font-size: inherit; }
-  .attendance-chart h3 { font-size: 10px; margin-bottom: 8px; }
+  .attendance-chart { display: flex; flex-direction: column; }
+  .attendance-chart h3 { order: 1; font-size: 10px; margin: 14px 0 0; text-align: center; }
   .chart { height: 126px; gap: 24px; }
   .bar i { max-width: 64px; }
   .bar { font-size: 11px; gap: 5px; }
