@@ -15,3 +15,5 @@ No build step. Serve the repository using any static HTTP server. GitHub Pages p
 Meetups: 20 events and 1,144 attendance visits through September 2026. Solid Rock: 43 attendees; exact day unconfirmed.
 
 `team.html`: co-founders Adam Cowperthwait and Humphrey Simwinga, merchant manager Michael Pelete, and community volunteers. Team names are also recorded in `data.json`.
+
+Design: shared spacing and responsive layout in `styles.css`; Manrope for headings and people, Inter with tabular numerals for counts and dates. Meetup summaries explicitly cover records since 2025; 2024 records are unavailable.
