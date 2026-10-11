@@ -11,3 +11,5 @@ Minimal community data website hosted on GitHub Pages.
 
 No build step. Serve the repository using any static HTTP server. GitHub Pages publishes main, root.
 
+
+Meetups: 20 events and 1,144 attendance visits through September 2026. Solid Rock: 43 attendees; exact day unconfirmed.
