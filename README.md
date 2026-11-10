@@ -4,8 +4,8 @@ Minimal community data website hosted on GitHub Pages.
 
 - `index.html`: overview; `data.html`: education records; `meetups.html`: dedicated meetup records; `events.html`: upcoming lesson calendar.
 - Update `data.json` for historical records. Overview figures and upcoming event HTML/ICS must also be updated when new data arrives.
-- 311 graduates across 18 cohorts. Cohort 18: 31 graduates, September 2026, Solid Rock, Livingstone.
-- Cohort 19 starts 16 October 2026; cohort 20 starts 17 October 2026. Times and venues are unconfirmed; calendar downloads reserve dates only.
+- 323 graduates across 20 cohorts. Cohort 18: 31 graduates, September 2026, Solid Rock, Livingstone.
+- Cohort 19: 3 graduates in Livingstone. Cohort 20: 9 graduates in Mukuni Village. Confirmed 10 November 2026; graduation dates unconfirmed. October calendar entries retain historical lesson start dates.
 - BTC Map snapshot: 124 merchants on 10 October 2026. No embedded map.
 - Meetup attendance counts visits, not unique people.
 

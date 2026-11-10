@@ -1,6 +1,7 @@
 'use strict';
 const $ = selector => document.querySelector(selector);
 const defaultDataset = () => document.body.dataset.dataset || (location.hash === '#meetups' ? 'meetups' : 'education');
+const recordYear = row => row.year ? String(row.year) : (row.month || row.date || '').slice(0,4);
 let dataset = defaultDataset(), records = [], data;
 const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const fmt = (value, month = value.length === 7) => new Date(value + (month ? '-01' : '') + 'T12:00:00').toLocaleDateString('en-GB', month ? {month:'short',year:'numeric'} : {day:'numeric',month:'short',year:'numeric'});
@@ -8,7 +9,7 @@ function render() {
   const education = dataset === 'education';
   document.title = (education ? 'Education' : 'Meetups') + ' · Bitcoin Victoria Falls';
   records = (education ? data.cohorts : data.meetups).filter(row =>
-    (!$('#year').value || (row.month || row.date).startsWith($('#year').value)) &&
+    (!$('#year').value || recordYear(row) === $('#year').value) &&
     (!education || !$('#area').value || row.area === $('#area').value) &&
     Object.values(row).join(' ').toLowerCase().includes($('#search').value.toLowerCase())
   );
@@ -26,11 +27,11 @@ function render() {
   const headers = education ? ['Cohort','Graduated','Area','Venue','Graduates'] : ['Date','Event','Venue','Attendance'];
   $('#table-head').innerHTML = '<tr>' + headers.map(title => '<th scope="col">' + title + '</th>').join('') + '</tr>';
   $('#table-body').innerHTML = records.length ? records.slice().reverse().map(row => {
-    const cells = education ? ['#'+row.cohort, fmt(row.month,true), row.area, row.venue || '—', row.graduates] : [fmt(row.date), row.theme, row.venue, row.attendance];
+    const cells = education ? ['#'+row.cohort, row.month ? fmt(row.month,true) : 'Date unconfirmed', row.area, row.venue || '—', row.graduates] : [fmt(row.date), row.theme, row.venue, row.attendance];
     return '<tr>' + cells.map((cell,index) => '<td data-label="' + headers[index] + '">' + esc(cell) + '</td>').join('') + '</tr>';
   }).join('') : '<tr><td colspan="' + headers.length + '">No matching records.</td></tr>';
-  const years = [...new Set(records.map(row => (row.month || row.date).slice(0,4)))].sort();
-  const totals = years.map(year => records.filter(row => (row.month || row.date).startsWith(year)).reduce((sum,row) => sum + (education ? row.graduates : row.attendance),0));
+  const years = [...new Set(records.map(row => recordYear(row)))].sort();
+  const totals = years.map(year => records.filter(row => recordYear(row) === year).reduce((sum,row) => sum + (education ? row.graduates : row.attendance),0));
   $('#chart').innerHTML = years.map((year,index) => '<div class="bar"><b>'+totals[index]+'</b><i style="height:'+Math.max(2,totals[index]/Math.max(...totals)*80)+'px"></i><span>'+year+'</span></div>').join('');
 }
 function download(text, name, type) {
@@ -49,7 +50,7 @@ function selectDataset(id) {
 }
 if (document.body.dataset.page === '1') {
   window.addEventListener('hashchange', () => selectDataset(defaultDataset()));
-  fetch('data.json?v=20261011-refined-2',{cache:'no-store'}).then(response => {
+  fetch('data.json?v=20261110-cohorts-20',{cache:'no-store'}).then(response => {
     if (!response.ok) throw Error('Data unavailable');
     return response.json();
   }).then(result => { data = result; selectDataset(defaultDataset()); }).catch(() => {
@@ -59,7 +60,7 @@ if (document.body.dataset.page === '1') {
   ['education','meetups'].forEach(id => $('#'+id)?.addEventListener('click', () => { location.hash = id; selectDataset(id); }));
   $('#export').addEventListener('click', () => {
     if (!data) return;
-    const keys = dataset === 'education' ? ['cohort','month','area','venue','graduates'] : ['date','theme','venue','attendance'];
+    const keys = dataset === 'education' ? ['cohort','month','year','area','venue','graduates'] : ['date','theme','venue','attendance'];
     const cell = value => '"'+String(value ?? '').replace(/"/g,'""')+'"';
     download([keys,...records.map(row => keys.map(key => row[key] ?? ''))].map(row => row.map(cell).join(',')).join('\r\n'),dataset+'.csv','text/csv;charset=utf-8');
   });
