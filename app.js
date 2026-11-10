@@ -62,7 +62,7 @@ if (document.body.dataset.page === '1') {
     if (!data) return;
     const keys = dataset === 'education' ? ['cohort','month','year','area','venue','graduates'] : ['date','theme','venue','attendance'];
     const cell = value => '"'+String(value ?? '').replace(/"/g,'""')+'"';
-    download([keys,...records.map(row => keys.map(key => row[key] ?? ''))].map(row => row.map(cell).join(',')).join('\r\n'),dataset+'.csv','text/csv;charset=utf-8');
+    download([keys,...records.map(row => keys.map(key => key === 'year' ? recordYear(row) : row[key] ?? ''))].map(row => row.map(cell).join(',')).join('\r\n'),dataset+'.csv','text/csv;charset=utf-8');
   });
 }
 if (document.body.dataset.page === '2') {
